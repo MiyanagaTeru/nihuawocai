@@ -1,0 +1,155 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font: 17px Helvetica, Arial; }
+#drawing {
+	touch-action: none;
+	cursor: default;
+}
+#clearDrawing {
+	position: absolute;
+	bottom: 260px;
+	left: 0;
+	height: auto;
+	width: auto;
+}
+#top {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 20px;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+}
+#ready {
+	display: inline-block;
+	width: 200px;
+	margin: 0 20px;
+	font-size: 20px;
+	-webkit-appearance: none;
+	background: #7ad97a;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+#question {
+	display: inline-block;
+}
+
+#gameTimer {
+	display: inline-block;
+	width: 200px;
+	margin: 0 20px;
+}
+
+#chat {
+	height: 250px;
+	background: #eee;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+#userbox {
+	display: inline-block;
+	width: 40%;
+	padding: 20px 40px;
+	position: relative;
+}
+#users {
+	list-style: none;
+}
+.readySpan {
+	margin: 0 10px 0 0;
+	padding: 3px;
+	background: #eee;
+	color: green;
+}
+.correct {
+	background: green;
+	color: white;
+}
+
+.score {
+	float: right;
+	padding: 0 6px;
+}
+#chatbox {
+	display: inline-block;
+	position: relative;
+	width: 60%;
+	background: #e3e3e3;
+	height: 100%;
+}
+
+#content {
+	height: calc(100% - 40px);
+	padding: 20px 40px;
+	list-style: none;
+	overflow-y: scroll;
+}
+.systemMessage {
+	background: #f9f9ad;
+}
+
+.chatForm {
+	height: 40px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: #fff;
+}
+
+.textInput {
+	width: calc(100% - 80px);
+	height: 100%;
+	font-size: 20px;
+}
+
+.submitButton {
+    -webkit-appearance: none;
+	background: #7ad97a;
+	width: 70px;
+	height: 100%;
+	vertical-align: top;
+	font-size: 17px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+#console {
+	position: absolute;
+	top: 0;
+	z-index: 200;
+	padding: 50px;
+	width: 100%;
+	background: rgba(0,0,0,.6);
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+@media screen and (max-width: 960px) {
+	#top {
+		font-size: 15px;
+	}
+	#ready {
+		margin: 0;
+		font-size: 14px;
+	}
+	#gameTimer {
+		margin: 0;
+	}
+	#userbox {
+		padding: 2px;
+	}
+	#content {
+		padding: 2px;
+	}
+}

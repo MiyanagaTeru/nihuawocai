@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ni hua wo cai</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div id="top">
+      <button id="ready">准备</button>
+      <div id="question"></div>
+      <div id="gameTimer"></div>
+    </div>
+    <canvas id="drawing" oncontextmenu="return false;"></canvas>
+    <div id="clearDrawing" class="submitButton">清屏</div>
+    <div id="chat">
+      <div id="userbox">
+        <ul id="users"></ul>
+        <form class="chatForm">
+          <input class="textInput" id="gaimingTextInput" type="text" name="chat">
+          <button class="submitButton" id="gaimingSubmitButton">改名</button>
+        </form>
+      </div>
+      <div id="chatbox">
+        <ul id="content"></ul><form class="chatForm" onSubmit="return false;">
+          <input class="textInput" id="textInput" type="text" name="chat">
+          <button class="submitButton" id="submitButton">提交</button>
+        </form>
+      </div>
+    </div>
+    <div id="console" class="hidden">
+        <button class="submitButton" id="forceStart">强行开始</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.slim.js"></script>
+    <script type="text/javascript" src="client.js"></script>
+  </body>
+</html>
