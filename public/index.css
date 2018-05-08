@@ -6,10 +6,11 @@ body { font: 17px Helvetica, Arial; }
 }
 #clearDrawing {
 	position: absolute;
-	bottom: 260px;
+	bottom: 160px;
 	left: 0;
 	height: auto;
 	width: auto;
+	padding: 5px 25px;
 }
 #top {
 	position: absolute;
@@ -46,7 +47,7 @@ body { font: 17px Helvetica, Arial; }
 }
 
 #chat {
-	height: 250px;
+	height: 150px;
 	background: #eee;
 	position: relative;
 	display: flex;
@@ -89,7 +90,7 @@ body { font: 17px Helvetica, Arial; }
 	height: calc(100% - 40px);
 	padding: 20px 40px;
 	list-style: none;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 .systemMessage {
 	background: #f9f9ad;
@@ -111,7 +112,7 @@ body { font: 17px Helvetica, Arial; }
 }
 
 .submitButton {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 	background: #7ad97a;
 	width: 70px;
 	height: 100%;
@@ -137,11 +138,13 @@ body { font: 17px Helvetica, Arial; }
 
 @media screen and (max-width: 960px) {
 	#top {
-		font-size: 15px;
+		font-size: 16px;
+		padding-top: 5px;
+    height: 40px;
 	}
 	#ready {
 		margin: 0;
-		font-size: 14px;
+		font-size: 16px;
 	}
 	#gameTimer {
 		margin: 0;

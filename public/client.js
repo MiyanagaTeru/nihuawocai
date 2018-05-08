@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	var startPoint = [0, 0];
 	var socket  = io.connect();
 	canvas.width = width;
-	canvas.height = height - 260;
+	canvas.height = height - 160;
 
 	canvas.onmousedown = function(e){
 		mouse.button = e.which;
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		} }
 		mouse.pos_prev = {x: mouse.pos.x, y: mouse.pos.y};
 		if (turnToDraw) {
-			setTimeout(mainLoop, 10);
+			setTimeout(mainLoop, 5);
 		}
 	}
 
